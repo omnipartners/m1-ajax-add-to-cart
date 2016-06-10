@@ -30,6 +30,8 @@
 
     onclick: function(el) {
         OmniAddToCart.showLoader();
+        // Make sure onclick is empty before we start, valid specially on non simple products on product page
+        if(el.attr('onclick')) { el.attr('onclick',''); }
         var isProductPage = el.parents("form#product_addtocart_form").length > 0 ? 1 : 0;
         var url = isProductPage ? $j('#product_addtocart_form').attr('action') : el.data('oldclick').replace('setLocation(\'','').replace('\')','');
         // Just redirect for anything other than real add to cart links ( configurable, bundle, grouped products )
