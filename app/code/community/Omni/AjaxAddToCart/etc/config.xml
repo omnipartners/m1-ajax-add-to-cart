@@ -36,6 +36,28 @@
             </omni_ajax_add_to_cart>
         </helpers>
     </global>
+    <frontend>
+        <translate>
+            <modules>
+                <Omni_AjaxAddToCart>
+                    <files>
+                        <default>Omni_AjaxAddToCart.csv</default>
+                    </files>
+                </Omni_AjaxAddToCart>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Omni_AjaxAddToCart>
+                    <files>
+                        <default>Omni_AjaxAddToCart.csv</default>
+                    </files>
+                </Omni_AjaxAddToCart>
+            </modules>
+        </translate>
+    </adminhtml>
     <default>
         <checkout>
             <cart>

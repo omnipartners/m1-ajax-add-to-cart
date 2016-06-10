@@ -47,3 +47,8 @@
 !/app/code/community/Omni
 /app/code/community/Omni/*
 !/app/code/community/Omni/AjaxAddToCart
+!/app/locale
+/app/locale/*
+!/app/locale/en_US
+/app/locale/en_US/*
+!/app/locale/en_US/Omni_AjaxAddToCart.csv
