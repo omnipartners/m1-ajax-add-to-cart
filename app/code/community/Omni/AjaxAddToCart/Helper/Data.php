@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<!--
+<?php
 /**
  *
  * NOTICE OF LICENSE
@@ -17,30 +16,13 @@
  * @copyright   Copyright (c) 2016 Omni Partners Oy (http://www.omnipartners.fi)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
--->
-<config>
-    <modules>
-        <Omni_AjaxAddToCart>
-            <version>0.0.0.1</version>
-        </Omni_AjaxAddToCart>
-    </modules>
-    <global>
-        <models>
-            <omni_ajax_add_to_cart>
-                <class>Omni_AjaxAddToCart_Model</class>
-            </omni_ajax_add_to_cart>
-        </models>
-        <helpers>
-            <omni_ajax_add_to_cart>
-                <class>Omni_AjaxAddToCart_Helper</class>
-            </omni_ajax_add_to_cart>
-        </helpers>
-    </global>
-    <default>
-        <checkout>
-            <cart>
-                <ajax_add_to_cart>0</ajax_add_to_cart>
-            </cart>
-        </checkout>
-    </default>
-</config>
+class Omni_AjaxAddToCart_Helper_Data extends Mage_Core_Helper_Abstract
+{
+    const XML_PATH_AJAX_ADDTO_ENABLED = 'checkout/cart/ajax_add_to_cart';
+
+
+    public function isEnabled()
+    {
+        return Mage::getStoreConfig( self::XML_PATH_AJAX_ADDTO_ENABLED );
+    }
+}

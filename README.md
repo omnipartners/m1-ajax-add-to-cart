@@ -20,7 +20,9 @@ Uninstall
 
 Configuration
 ------------------------------------------------------------------------------------
-The extension provides the system configuration flag, for enabling/disabling Ajax Add To Cart functionality
+The extension provides the (Global) system configuration flag (System->Configuration->Sales->Checkout->Shopping Cart->Enable Ajax Add to Cart), for enabling/disabling Ajax Add To Cart functionality.
+Ajax Add to Cart must be explicitly enabled in configuration, before it becomes functional on the store front.
+
 
 Testing
 ------------------------------------------------------------------------------------
