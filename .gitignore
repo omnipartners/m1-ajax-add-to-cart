@@ -34,4 +34,16 @@
 /media
 /js
 /skin
-/app
+/app/*
+!/app/etc
+/app/etc/*
+!/app/etc/modules
+/app/etc/modules/*
+!/app/etc/modules/Omni_AjaxAddToCart.xml
+!/app/code
+/app/code/*
+!/app/code/community
+/app/code/community/*
+!/app/code/community/Omni
+/app/code/community/Omni/*
+!/app/code/community/Omni/AjaxAddToCart
