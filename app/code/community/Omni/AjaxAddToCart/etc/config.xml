@@ -46,6 +46,13 @@
                 </Omni_AjaxAddToCart>
             </modules>
         </translate>
+        <layout>
+            <updates>
+                <omni_ajax_add_to_cart>
+                    <file>omni/ajax_add_to_cart.xml</file>
+                </omni_ajax_add_to_cart>
+            </updates>
+        </layout>
     </frontend>
     <adminhtml>
         <translate>
