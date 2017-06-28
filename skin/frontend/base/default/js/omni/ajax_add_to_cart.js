@@ -93,6 +93,7 @@
         this.minicart.init();
         this.minicart.updateCartQty(qty);
         this.minicart.showSuccess( "Item was added successfully." );
+        $j("html, body").animate({scrollTop: 0 }, "slow");
         $j('#minicart-error-message').fadeOut('slow');
     },
 
